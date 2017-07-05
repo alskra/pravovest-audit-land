@@ -1,0 +1,152 @@
+include ../personnel-item/personnel-item
+
+-
+  var personnelListMedical = [
+  {
+  img: 'Fotolia_105772775_Subscription_Monthly_M.jpg',
+  title: 'Василий Пупкин',
+  description: 'Терапевт'
+  },
+  {
+  img: 'Fotolia_121754012_Subscription_Monthly_M.jpg',
+  title: 'Антонина Петрова',
+  description: 'Ультразвуковая диагностика'
+  },
+  {
+  img: 'Fotolia_111491835_Subscription_Monthly_M.jpg',
+  title: 'Анастасия Ягодкина',
+  description: 'Эндокринолог'
+  },
+  {
+  img: 'Fotolia_99513289_Subscription_Monthly_M.jpg',
+  title: 'Александр Лункин',
+  description: 'Врач общей практики'
+  }
+  ];
+
+  var personnelListBeauty = [
+  {
+  img: 'Fotolia_61536385_Subscription_Monthly_M.jpg',
+  title: 'Наталья Клубничкина',
+  description: 'Визажист'
+  },
+  {
+  img: 'Fotolia_108023772_Subscription_Monthly_M.jpg',
+  title: 'Антонина Петрова',
+  description: 'Старший парикмахер'
+  },
+  {
+  img: 'Fotolia_121763424_Subscription_Monthly_M.jpg',
+  title: 'Анастасия Ягодкина',
+  description: 'Парикмахер'
+  },
+  {
+  img: 'Fotolia_122413838_Subscription_Monthly_M.jpg',
+  title: 'Александр Лункин',
+  description: 'Парикмахер'
+  }
+  ];
+
+  var personnelListFitness = [
+  {
+  img: 'Fotolia_121968721_Subscription_Monthly_M.jpg',
+  title: 'Наталья Клубничкина',
+  description: 'Старший тренер'
+  },
+  {
+  img: 'Fotolia_92467056_Subscription_Monthly_M.jpg',
+  title: 'Антонина Петрова',
+  description: 'Дипломированный тренер'
+  },
+  {
+  img: 'Fotolia_122527811_Subscription_Monthly_M.jpg',
+  title: 'Алексей Молотов',
+  description: 'Мастер спорта по тяжелой атлетике'
+  },
+  {
+  img: 'Fotolia_121018086_Subscription_Monthly_M.jpg',
+  title: 'Екатерина Попова',
+  description: 'Тренер'
+  }
+  ];
+
+  var personnelListPet = [
+  {
+  img: 'Fotolia_121927896_Subscription_Monthly_M.jpg',
+  title: 'Василий Пупкин',
+  description: 'Кардиолог'
+  },
+  {
+  img: 'Fotolia_107432576_Subscription_Monthly_M.jpg',
+  title: 'Антонина Петрова',
+  description: 'Невролог'
+  },
+  {
+  img: 'Fotolia_90059587_Subscription_Monthly_M.jpg',
+  title: 'Анастасия Ягодкина',
+  description: 'Анестезиолог'
+  },
+  {
+  img: 'Fotolia_118349237_Subscription_Monthly_M.jpg',
+  title: 'Александр Лункин',
+  description: 'Врач общей практики'
+  }
+  ];
+
+  var personnelListSpa = [
+  {
+  img: 'Fotolia_122040618_Subscription_Monthly_M.jpg',
+  title: 'Василиса Пупкина',
+  description: 'Мастер по тайскому массажу'
+  },
+  {
+  img: 'Fotolia_80163943_Subscription_Monthly_M.jpg',
+  title: 'Антонина Петрова',
+  description: 'Визажист'
+  },
+  {
+  img: 'Fotolia_107499543_Subscription_Monthly_M.jpg',
+  title: 'Анастасия Ягодкина',
+  description: 'Косметолог'
+  },
+  {
+  img: 'Fotolia_118225354_Subscription_Monthly_M.jpg',
+  title: 'Александр Лункин',
+  description: 'Мастер по массажу'
+  }
+  ];
+
+  var personnelListYoga = [
+  {
+  img: 'Fotolia_83569966_Subscription_Monthly_M.jpg',
+  title: 'Василиса Пупкина',
+  description: 'Преподаватель'
+  },
+  {
+  img: 'Fotolia_118363892_Subscription_Monthly_M.jpg',
+  title: 'Антонина Петрова',
+  description: 'Инструктор'
+  },
+  {
+  img: 'Fotolia_84722301_Subscription_Monthly_M.jpg',
+  title: 'Анастасия Ягодкина',
+  description: 'Специалист по ЛФК'
+  },
+  {
+  img: 'Fotolia_122180986_Subscription_Monthly_M.jpg',
+  title: 'Александр Лункин',
+  description: 'Специалист общей практики'
+  }
+  ];
+
+mixin personnel-list(personnelList)
+  .-personnel-list&attributes(attributes)
+    .__row.row
+      each personnel, index in personnelList
+        .__col.col-xs-12.col-sm-6.col-md-3
+          +personnel-item(personnel)
+      // Spacers
+      .__col.col-xs-12.col-sm-6.col-md-3
+      .__col.col-xs-12.col-sm-6.col-md-3
+      .__col.col-xs-12.col-sm-6.col-md-3
+      .__col.col-xs-12.col-sm-6.col-md-3

@@ -1,0 +1,21 @@
+.ratings
+  &__img-wrap
+    overflow hidden
+    width rem(120)
+    height rem(90)
+    margin-bottom rem(20)
+    &:empty
+      display flex
+      justify-content center
+      align-items center
+      background #CCCCCC
+      &:before
+        content '240x180'
+        font-size rem(20)
+
+  &__img
+    width 100%
+    padding-top percentage(90/120)
+
+  &__caption
+    font-size rem(14)

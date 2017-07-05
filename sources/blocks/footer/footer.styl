@@ -1,0 +1,268 @@
+// Mobile footer
+.footer-mob {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-color: #fbfafa;
+}
+.footer-mob__info {
+  margin-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 13px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  @media (min-width $screen-sm-min) {
+    font-size: 16px;
+  }
+}
+.footer-mob__awards {
+  margin-bottom: 25px;
+}
+.footer-mob__awards::before,
+.footer-mob__awards:after {
+  content: "";
+  display: table;
+}
+.footer-mob__awards:after {
+  clear: both;
+}
+.footer-mob__item {
+  float: left;
+  width: 50%;
+  height: 210px;
+  padding: 20px;
+  border-right: 1px solid #e9e7e7;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:nth-child(1), &:nth-child(2) {
+    border-bottom: 1px solid #e9e7e7;
+  }
+  @media (min-width $screen-md-min) {
+    width: 25%;
+    height: 180px;
+    &:nth-child(1), &:nth-child(2) {
+      border-bottom: 0;
+    }
+  }
+}
+.footer-mob__item:last-child {
+  border-right: 0;
+}
+.footer-mob__item__img {
+  height: 58px;
+  margin-bottom: 20px;
+}
+.footer-mob__item__img img {
+  max-height: 100%;
+}
+.footer-mob__create span {
+  display: block;
+  color: #000;
+  font-size: 13px;
+  @media (min-width $screen-sm-min) {
+    font-size: 18px;
+  }
+}
+.footer-mob__create .glyphicon {
+  display block
+  text-align center
+  font-size 11px
+  line-height 1em
+  margin 2px 0 5px
+}
+.footer-mob__item__tx {
+  font-size: 11px;
+  @media (min-width $screen-sm-min) {
+    font-size: 16px;
+  }
+}
+
+// Desktop footer
+.footer
+  flex 0 0 auto
+  p
+   margin-bottom rem(10)
+
+.footer {
+  font-size: 12px;
+}
+.footer .container-fluid {
+  overflow: hidden;
+}
+.footer .row {
+  display block
+  margin: 0;
+}
+.footer i {
+  display: inline-block;
+}
+.footer .container-fluid {
+  color: #fff;
+  background: #9e0b0f;
+  //background-clip content-box
+}
+.icon-designlabru svg {
+  height auto !important
+}
+.contextual-links-region {
+  outline: 0;
+  position: relative;
+}
+footer .row > *:last-child {
+  margin-bottom: 0;
+}
+html.js div.contextual-links-wrapper {
+  display: block;
+}
+div.contextual-links-wrapper {
+  display: none;
+  font-size: 90%;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  z-index: 999;
+}
+.footer a:not(.btn) {
+  border: 0;
+}
+div.contextual-links-wrapper a {
+  text-decoration: none;
+}
+.row__red a {
+  color: #fff;
+}
+a.contextual-links-trigger {
+  background: transparent url(//pravovest-audit.ru/modules/contextual/images/gear-select.png) no-repeat 2px 0;
+  border: 1px solid transparent;
+  display: none;
+  height: 18px;
+  margin: 0;
+  padding: 0 2px;
+  outline: 0;
+  text-indent: 34px;
+  width: 28px;
+  overflow: hidden;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+div.contextual-links-wrapper ul.contextual-links {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  margin: 0;
+  padding: .25em 0;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 18px;
+  white-space: nowrap;
+  -moz-border-radius: 4px 0 4px 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-radius: 4px 0 4px 4px;
+  border-radius: 4px 0 4px 4px;
+}
+ul.contextual-links li {
+  line-height: 100%;
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+ul.contextual-links li a {
+  color: #333 !important;
+  display: block;
+  margin: .25em 0;
+  padding: .25em 1em .25em .5em;
+}
+div.contextual-links-wrapper a {
+  text-decoration: none;
+}
+.footer_brands > .col {
+  margin-right: 25px;
+}
+.footer .copyright {
+  line-height: 1.8;
+  margin: 15px 0 30px 0;
+}
+.footer_brands p {
+  -moz-text-align-last: left !important;
+  text-align-last: left !important;
+}
+.footer .sitecredits a {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.icon-designlabru {
+  width: 128px;
+}
+.footer_brands .image {
+  height: 82px;
+}
+.footer .row {
+  padding: 35px 40px 29px 40px;
+}
+[class*="icon-"] svg {
+  height: 1px;
+  width: 100%;
+  overflow: visible;
+  vertical-align: top;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.footer_brands {
+  margin-top: -15px;
+}
+.image {
+  margin-top: 5px;
+  margin-bottom: 33px;
+}
+.footer_brands .image {
+  position: relative;
+  margin-bottom: 10px;
+}
+.footer_brands .image > * {
+  top: 50%;
+  display: block;
+  position: relative;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.icon-logo-wiseadvise {
+  width: 151px;
+}
+.icon-logo-wiseadvise svg {
+  padding-bottom: 33%;
+}
+.icon-logo-sdro {
+  width: 111px;
+}
+.icon-logo-sdro svg {
+  padding-bottom: 70%;
+}
+.icon-logo-allianz {
+  width: 134px;
+}
+.icon-logo-allianz svg {
+  padding-bottom: 26%;
+}
+.icon-logo-ipb {
+  width: 112px;
+}
+.icon-logo-ipb svg {
+  padding-bottom: 64%;
+}

@@ -1,0 +1,66 @@
+.history-view
+  p
+    &:last-child
+      margin 0
+
+  &__header
+    font-size rem(18)
+    padding ($grid-gutter-width)
+    background #eee
+    margin (- $grid-gutter-width) (- $grid-gutter-width) ($grid-gutter-width)
+
+  &__header-title
+    color $red-1
+    font-size rem(26)
+    text-transform uppercase
+
+  &__header-img-wrap
+    max-width rem(320)
+    margin ($grid-gutter-width) auto 0
+
+  &__header-img
+    display block
+    width 100%
+
+  &__result
+    font-size rem(18)
+    padding rem(15)
+    text-align center
+    border 2px solid #ccd2d7
+    margin rem(30) 0
+
+  &__result-title
+    font-weight 600
+    font-size rem(22)
+    margin-bottom 0.5em
+
+  &__bg
+    padding ($grid-gutter-width)
+    background #eee
+    margin ($grid-gutter-width) (- $grid-gutter-width)
+    &:last-child
+      margin-bottom (- $grid-gutter-width)
+
+  @media (min-width $screen-md-min)
+    &__header
+      display flex
+      padding rem(60)
+      margin rem(-60) rem(-60) rem(60)
+
+    &__header-text
+      overflow hidden
+      flex 1 1 auto
+
+    &__header-img-wrap
+      flex 0 0 rem(320)
+      margin rem(6) 0 0 ($grid-gutter-width)
+
+    &__result
+      padding rem(30)
+      margin rem(50) rem(100)
+
+    &__bg
+      padding rem(60)
+      margin rem(60) rem(-60)
+      &:last-child
+        margin-bottom rem(-60)

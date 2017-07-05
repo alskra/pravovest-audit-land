@@ -1,0 +1,58 @@
+-
+  var articlesList = [
+  {
+  img: '',
+  title: 'УСТРАНЕНА ПОТЕРЯ ПРИБЫЛИ В 43 МЛН РУБ.',
+  description: 'Найдена прибыль на сумму около 43 000 000 руб. и устранен риск потери заказов от крупнейшего партнера — ' +
+  'компании Самсунг, по результатам проведенного финансового анализа и обязательного комплексного аудита.'
+  },
+  {
+  img: '',
+  title: 'ДВА ЗАЙЦА ОДНИМ ВЫСТРЕЛОМ!',
+  description: 'На 20% снижена стоимость сделки по покупке бизнеса, а также выигран арбитраж на 24 млн. руб. ' +
+  'благодаря инициативному аудиту (Due Diligence).'
+  },
+  {
+  img: '',
+  title: 'БОЛЕЕ 2000% — ЭФФЕКТИВНОСТЬ НАЛОГОВОГО АУДИТА',
+  description: 'По итогам налогового аудита выявлено резервов более чем на 37 млн. руб., а также обнаружено и устранено налоговых рисков на сумму 4,5 млн. руб.'
+  },
+  {
+  img: '',
+  title: 'ДОКАЗАЛИ «НАЛОГОВОЙ», ЧТО ДИРЕКТОР НЕ ВЕРБЛЮД',
+  description: 'Как было найдено основание для снятия личной ответственности с генерального директора, ' +
+  'из-за претензии налоговой службы в разности уровня закупочных цен на сумму 1,4 млрд. руб.'
+  },
+  {
+  img: '',
+  title: 'ТРОЕКРАТНЫЙ РОСТ БИЗНЕСА',
+  description: 'Увеличение годового оборота компании в 3 раза: с 1,1 млрд. руб. до 3,5 млрд. руб. стало возможным после постановки учета ' +
+  'и трансформации отчетности в формате МСФО.'
+  },
+  {
+  img: '',
+  title: 'АУДИТ ОКУПИЛСЯ УЖЕ В ПЕРВЫЙ ДЕНЬ',
+  description: 'Ликвидированы риски на 12,5 млн. руб. и открыты резервы на сумму более 1,1 млн. руб., ' +
+  'благодаря налоговому аудиту, автоматизации и построению бухгалтерской службы.'
+  }
+  ];
+
+mixin articles-list(list)
+  .-articles-list&attributes(attributes)
+    .__row.row
+      each item, index in list
+        .__col.col-xs-12.col-sm-6.col-md-4
+          article.-article-item
+            +a(`popups/histories/history-${0 + 1}.html`).__img-wrap(data-fancybox='history?1' data-type='ajax' data-fancybox--group)
+              img.__img(src=`${paths.imgContent}/histories-list/380x200/history_${index + 1}.jpg`
+              alt='' data-object-fit='cover' onload='objectFit(this)')
+            h3.__title
+              +a(`popups/histories/history-${0 + 1}.html`).__title-link(data-fancybox='history?2' data-type='ajax' data-fancybox--group) #{item.title}
+            .__description
+              p #{item.description}
+            footer.__footer
+              +a(`popups/histories/history-${0 + 1}.html`).__btn.btn.btn_1(data-fancybox='history?3' data-type='ajax' data-fancybox--group) Подробнее
+      // Spacers
+      .__col.col-xs-12.col-sm-6.col-md-4
+      .__col.col-xs-12.col-sm-6.col-md-4
+      .__col.col-xs-12.col-sm-6.col-md-4

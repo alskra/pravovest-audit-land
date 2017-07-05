@@ -1,0 +1,103 @@
+.write-item-2
+  display flex
+  flex-flow column
+  min-height 100%
+  padding rem(30)
+  border 2px solid #ccd2d7
+  p
+    &:last-child
+      margin 0
+
+  &__col
+    flex none
+    &_1
+      flex none
+      overflow hidden
+      width rem(170)
+      margin 0 auto 1.5rem
+      &:hover, &:focus
+        & ~ {r}__col_2 {r}__title-link
+          color $link-color
+
+    &_2
+      display flex
+      flex-flow column
+      overflow hidden
+      flex 1 1 auto
+
+  &__img-wrap
+    display block
+    overflow hidden
+    padding-top percentage(240/170)
+    position relative
+
+  &__img
+    position absolute
+    top 0
+    left 0
+
+  &__header
+    flex none
+    margin-bottom 1.25rem
+
+  &__title
+    overflow hidden
+    flex 1 1 auto
+    align-self center
+    color $black-1
+    font-size rem(23px)
+    font-weight 700
+    margin 0 0 0.5em
+
+  &__title-link
+    display block
+    color inherit
+    text-decoration none
+    &:hover, &:focus
+      color $red-1
+      text-decoration none
+
+  &__date
+    display block
+    font-size rem(14px)
+    strong
+      font-size rem(18px)
+
+  &__content
+    flex none
+
+  &__footer
+    flex none
+    text-align center
+    padding-top rem(30px)
+    margin-top auto
+
+  &_small
+    & {r}__title
+      font-size rem(20)
+
+  @media (min-width $screen-lg-min)
+    flex-flow row
+
+    &__col
+      &_1
+        margin 0 ($grid-gutter-width) 0 0
+
+    &__header
+      display flex
+
+    &__title
+      overflow hidden
+      flex 1 1 auto
+      margin-bottom auto
+
+    &__date
+      flex none
+      text-align center
+      padding-left rem(30)
+      border-left 1px solid #ccd2d7
+      margin-left rem(30)
+
+    &__footer
+      text-align left
+

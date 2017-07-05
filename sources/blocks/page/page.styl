@@ -1,0 +1,111 @@
+.page
+  display flex
+
+@keyframes loading
+  100%
+    transform rotate(360deg)
+
+.loading
+  &:before
+    content ''
+    position absolute
+    width rem(30px)
+    height rem(30px)
+    margin rem(-15px)
+    border-width rem(3px)
+    border-style solid
+    border-color $blue-1
+    border-right-color transparent
+    border-radius 50%
+    top 50%
+    left 50%
+    right 50%
+    bottom 50%
+    animation loading 1.2s linear infinite
+    z-index $zindex-navbar
+
+//Fancybox
+.fancybox-bg
+  background white
+
+.fancybox-slide
+  white-space nowrap
+  > *:not(.fancybox-loading)
+    white-space normal
+    background-color white
+    box-shadow 0 5px 29px rgba(0, 0, 0, 0.12)
+    margin 0
+
+  @media (min-width $screen-sm-min)
+    padding $grid-gutter-width
+
+.fancybox-arrow
+  visibility hidden
+  transition opacity .25s, visibility 0s linear .25s
+  .fancybox-show-nav &
+    opacity 1
+    visibility visible
+    transition opacity .25s, visibility 0s
+
+//Slideout
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 260px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+.page
+  &_home-project
+    display block
+    & {$p}__header
+      background #2a333c
+      margin 0 0 20px
+      padding 30px 0
+    & {$p}__title
+      color white
+      margin 0
+      small
+        color inherit
+
+  for $key, $val in $colors
+    &_{$key}
+      $blue-1 = $val;
+      $link-color = $blue-1
+      $link-hover-color = darken($link-color, 15%)
+
+      // scaffolding
+      ::selection
+        background $blue-1
+      a
+        color $link-color
+        &:hover,
+        &:focus
+          color $link-hover-color
+
+      // page
+      .loading
+        &:before
+          border-color $blue-1
+          border-right-color transparent

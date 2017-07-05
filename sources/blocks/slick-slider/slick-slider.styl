@@ -1,0 +1,34 @@
+.slick-slide, .slick-arrow, .slick-dots button, .slick-slider a
+  &:focus
+    outline 0
+.slick-arrow, .slick-dots button
+  border 0
+  background none
+  margin 0
+  padding 0
+.slick-disabled
+  disabled()
+.slick-dots
+  list-style none
+  margin 0
+  padding 0
+  display flex
+  flex-flow row wrap
+  justify-content center
+  align-items center
+  font-size 0
+  color transparent
+  text-align center
+  li
+    margin rem(7px)
+    button
+      square rem(13px)
+      background-color #dfdfdf
+      border-radius 50%
+      transition $transition-base
+    &.slick-active
+      button
+        background-color #888
+
+img.slick-loading
+  visibility hidden

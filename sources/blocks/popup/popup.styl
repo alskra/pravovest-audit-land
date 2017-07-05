@@ -1,0 +1,18 @@
+.popup
+  width 100%
+  padding ($grid-gutter-width)
+  max-width $screen-md-min
+
+  &__header
+    text-align center
+    margin-bottom rem(30)
+
+  &__title
+    font-size rem(26)
+    text-transform uppercase
+
+  @media (min-width $screen-md-min)
+    padding rem(60)
+
+    &__title
+      font-size rem(48)
