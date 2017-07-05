@@ -4,7 +4,7 @@
   margin 0 rem(-15px)
 
   &__item
-    width uq('calc(100%/3 - ' + rem(30) + ')')
+    width uq('calc(100%/2 - ' + rem(30) + ')')
     position relative
     margin 0 rem(15) rem(30)
     &:before
@@ -13,7 +13,7 @@
       padding-top percentage(115/155)
     &:empty
       &:after
-        content '310x230'
+        content '450x334'
         font-size rem(20)
         display flex
         justify-content center
@@ -29,3 +29,7 @@
     position absolute
     top 0
     left 0
+
+  @media (min-width em-root(480))
+    &__item
+      width uq('calc(100%/3 - ' + rem(30) + ')')
