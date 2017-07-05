@@ -17,7 +17,7 @@ function navPrimary(e, t) {
             t.removeClass("nav__visible"), jQuery(this).find(l).removeClass(d)
         })
     }
-    var o, s = jQuery("#block-system-main-menu > .content > ul.menu"),
+    var o, s = jQuery("#block-system-main-menu > .content__header-2 > ul.menu"),
         r = s.find("li"),
         l = "> a, > div",
         d = "js-active",
