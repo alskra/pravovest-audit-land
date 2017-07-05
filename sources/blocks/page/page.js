@@ -1,4 +1,4 @@
-var $screenSm = 768, $screenMd = 1024, $screenLg = 1230;
+var $screenSm = 768, $screenMd = 1024, $screenLg = 1280;
 
 var $fontSizeRoot = 16, $fontSizeRootComputed = parseInt($('html').css('fontSize'));
 
