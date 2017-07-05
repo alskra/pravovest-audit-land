@@ -3,6 +3,7 @@
     overflow hidden
     width rem(120)
     height rem(90)
+    position relative
     margin-bottom rem(20)
     &:empty
       display flex
@@ -14,8 +15,9 @@
         font-size rem(20)
 
   &__img
-    width 100%
-    padding-top percentage(90/120)
+    position absolute
+    top 0
+    left 0
 
   &__caption
     font-size rem(14)

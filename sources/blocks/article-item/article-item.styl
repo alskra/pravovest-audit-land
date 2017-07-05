@@ -1,6 +1,9 @@
 .article-item
   display flex
   flex-flow column
+  padding rem(30)
+  background white
+  border 2px solid #ccd2d7
   min-height 100%
   p
     display inline
@@ -9,9 +12,12 @@
     flex none
     display block
     overflow hidden
-    padding-top percentage(200/380)
     position relative
-    margin-bottom rem(25px)
+    margin rem(-30) rem(-30) rem(25px)
+    &:before
+      content ''
+      display block
+      padding-top percentage(200/380)
     &:hover, &:focus
       &~{r}__title {r}__title-link
         color $red-1
