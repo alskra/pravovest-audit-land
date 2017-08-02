@@ -13,7 +13,9 @@ include ../../../blocks/articles-list/articles-list
           Найдена прибыль на сумму около 43 000 000 руб. и устранен риск потери заказов от крупнейшего партнера —
           компании Самсунг, по результатам проведенного финансового анализа и обязательного комплексного аудита.
     .__header-img-wrap
-      img.__header-img(src=`${paths.imgContent}/histories-list/380x200/history_1.jpg` alt='')
+      img.__header-img(src=`${paths.imgContent}/histories-list/380x200/history_1.jpg`
+      srcset=`${paths.imgContent}/histories-list/380x200/history_1.jpg 1x, ${paths.imgContent}/histories-list/760x400/history_1.jpg 1.25x`
+      alt='')
   h2.__title Исходное состояние:
   p.
     В канун нового 2016 года в компанию «Финансовый и налоговый аудит» WiseAdvice Consulting Group обратился завод
@@ -44,7 +46,7 @@ include ../../../blocks/articles-list/articles-list
     p.__result-title ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ АУДИТОРА
     p.
       Задайте вопрос по Вашей ситуации и получите консультацию аудитора.
-    +a().__btn.btn.btn_1 Задать вопрос
+    +a('tel:+74952312321').__tel.glyphicon.glyphicon-phone 8 495 231-23-21
 
   h2.__title Решение:
   p.
